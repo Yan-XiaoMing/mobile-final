@@ -1,0 +1,506 @@
+.loading-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #F3F3F3;
+
+  h5 {
+    margin-top: 200px;
+    font-size: 67px;
+    font-weight: bolder;
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .05em solid;
+    width: 10ch;
+    animation: typing 10s steps(10),
+    caret 1s steps(1) infinite;
+  }
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+.loading-container { /*change the size of landscape here */
+  overflow: hidden;
+  background: #1488CC; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2B32B2, #1488CC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 500px;
+  height: 300px;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 10px 10px rgba(0, 0, 0, .1);
+  transform: scale(1.5);
+}
+
+/* add moon and outer moon rings here */
+
+.disc1 {
+  position: absolute;
+  top: 350px;
+  left: 125px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: #DDE4F8;
+  animation: moon3 1.8s 1 1.2s forwards;
+}
+
+.disc2 {
+  position: absolute;
+  top: 700px;
+  left: 155px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #BBCAF1;
+  animation: moon2 2s 1 1s forwards;
+}
+
+.disc3 {
+  position: absolute;
+  top: 950px;
+  left: 175px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #99B0EA;
+  animation: moon1 2s 1 1s forwards;
+}
+
+/* add ridges or landscapes here */
+
+.landscape1 {
+  position: absolute;
+  width: 550px;
+  height: 100px;
+  background-color: #567CDC;
+  transform: rotate(-8deg);
+  top: 170px;
+}
+
+.landscape2 {
+  position: absolute;
+  width: 550px;
+  height: 100px;
+  background-color: #3462D5;
+  transform: rotate(8deg);
+  top: 190px;
+  left: -10px;
+}
+
+.landscape3 {
+  position: absolute;
+  width: 550px;
+  height: 100px;
+  background-color: #2650BA;
+  transform: rotate(-4deg);
+  top: 210px;
+}
+
+.landscape4 {
+  position: absolute;
+  width: 550px;
+  height: 100px;
+  background-color: #1F4298;
+  transform: rotate(3deg);
+  top: 250px;
+  left: -10px;
+}
+
+/* add trees here */
+
+.tree1 {
+  position: absolute;
+  top: 1250px;
+  left: 450px;
+  height: 30px;
+  width: 25px;
+  background-color: #59A5D8;
+  clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+  box-shadow: 2px 0 2px 4px rgba(0, 0, 0, .1);
+  animation: tree1 1.3s 1 forwards 2s;
+}
+
+.tree2 {
+  position: absolute;
+  top: 1550px;
+  left: 135px;
+  height: 20px;
+  width: 15px;
+  background-color: #59A5D8;
+  clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+  box-shadow: 2px 0 2px 4px rgba(0, 0, 0, .1);
+  animation: tree2 1.3s 1 forwards 2s;
+}
+
+.tree3 {
+  position: absolute;
+  top: 1500px;
+  left: 25px;
+  height: 40px;
+  width: 35px;
+  background-color: #2395A9;
+  clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+  box-shadow: 2px 0 2px 4px rgba(0, 0, 0, .1);
+  animation: tree3 1.3s 1 forwards 2s;
+}
+
+.tree4 {
+  position: absolute;
+  top: 1650px;
+  left: 400px;
+  height: 40px;
+  width: 35px;
+  background-color: #1F8698;
+  clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+  box-shadow: 2px 0 2px 4px rgba(0, 0, 0, .1);
+  animation: tree4 1.3s 1 forwards 2s;
+}
+
+.tree5 {
+  position: absolute;
+  top: 2000px;
+  left: 85px;
+  height: 50px;
+  width: 35px;
+  background-color: #155966;
+  clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+  box-shadow: 2px 0 2px 4px rgba(0, 0, 0, .1);
+  animation: tree5 1.3s 1 forwards 2s;
+}
+
+.tree6 {
+  position: absolute;
+  top: 2150px;
+  left: 325px;
+  height: 50px;
+  width: 35px;
+  background-color: #114955;
+  clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+  box-shadow: 2px 0 2px 4px rgba(0, 0, 0, .1);
+  animation: tree6 1.3s 1 forwards 2s;
+}
+
+/* add stars here */
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+}
+
+.s1 {
+  top: 50px;
+  left: 50px;
+}
+
+.s2 {
+  top: 10px;
+  left: 80px;
+}
+
+.s3 {
+  top: 90px;
+  left: 100px;
+}
+
+.s4 {
+  top: 130px;
+  left: 40px;
+}
+
+.s5 {
+  top: 25px;
+  left: 160px;
+}
+
+.s6 {
+  top: 15px;
+  left: 300px;
+}
+
+.s7 {
+  top: 70px;
+  left: 365px;
+}
+
+.s8 {
+  top: 30px;
+  left: 425px;
+}
+
+.s9 {
+  top: 90px;
+  left: 460px;
+}
+
+.s10 {
+  top: 120px;
+  left: 408px;
+}
+
+.shootingstar {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  top: 31px;
+  left: 375px;
+  animation: shoot 5s infinite;
+}
+
+.shootingstar2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  top: 20px;
+  left: 380px;
+  animation: shootreverse 5s infinite;
+}
+
+#animate {
+  animation: glow 4s infinite;
+}
+
+/* all the animation goes here */
+
+@keyframes shoot {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+    width: 20px;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+    transform: translateX(-350px);
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shootreverse {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+    width: 30px;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+}
+
+@keyframes moon1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+    top: 95px;
+  }
+}
+
+@keyframes moon2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.4;
+    top: 70px;
+  }
+}
+
+@keyframes moon3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.2;
+    top: 35px;
+  }
+}
+
+@keyframes tree1 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+    top: 105px;
+    transform: scale(0.7)
+  }
+  100% {
+    opacity: 1;
+    top: 125px;
+  }
+}
+
+@keyframes tree2 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+    top: 135px;
+    transform: scale(0.7)
+  }
+  100% {
+    opacity: 1;
+    top: 155px;
+  }
+}
+
+@keyframes tree3 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+    top: 130px;
+    transform: scale(0.7)
+  }
+  100% {
+    opacity: 1;
+    top: 150px;
+  }
+}
+
+@keyframes tree4 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+    top: 145px;
+    transform: scale(0.7)
+  }
+  100% {
+    opacity: 1;
+    top: 165px;
+  }
+}
+
+@keyframes tree5 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+    top: 180px;
+    transform: scale(0.7)
+  }
+  100% {
+    opacity: 1;
+    top: 200px;
+  }
+}
+
+@keyframes tree6 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+    top: 195px;
+    transform: scale(0.7)
+  }
+  100% {
+    opacity: 1;
+    top: 215px;
+  }
+}

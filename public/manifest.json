@@ -1,0 +1,33 @@
+{
+  "short_name": "Q&A",
+  "name": "Q&A",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "main_logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "main_logo.png",
+      "type": "image/png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "main_logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "screenOrientation": [
+    "portrait-primary"
+  ],
+  "start_url": "/login",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#0084FF"
+}
